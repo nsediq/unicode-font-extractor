@@ -90,7 +90,8 @@ The output will be:
 
 ## 🖼️ Screenshot
 
-> _(Optional: Add a screenshot of the GUI interface here if you like)_
+> ![image](https://github.com/user-attachments/assets/8fafd4ee-2480-427f-835f-be1c5cd9a6f6)
+
 
 ---
 
