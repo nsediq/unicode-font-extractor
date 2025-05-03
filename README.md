@@ -114,7 +114,32 @@ pyinstaller --noconsole --onefile extract_unicode_gui.py
 ```
 
 The resulting `.exe` will be located in the `dist/` folder.
+---
 
+## 🎮 Using This Tool for Unity Font Import (Unicode Hex Ranges)
+
+When working with custom fonts in Unity (especially for multilingual projects), it's essential to define **Unicode Hex Ranges** for dynamic font generation or character set filtering. Unity's font importer allows you to specify which character ranges should be included in a font asset.
+
+This tool helps you:
+
+1. **Extract actual used Unicode characters** from a `.ttf` or `.otf` font.
+2. **Compress them into a clean range format** compatible with Unity's Unicode Hex Ranges input.
+
+### ✅ Unity-Compatible Format
+
+The output from this tool (e.g., `0600-06FF,FB50-FDFF,FE70-FEFF`) can be directly copied into Unity's "Character" settings under:
+```
+Font Asset > Character > Custom Characters > Unicode Hex Ranges
+```
+
+### 🔄 Why Use This?
+
+- Avoid including unnecessary characters in the build.
+- Reduce font file size and memory usage.
+- Ensure proper rendering of only required scripts (e.g., Arabic, Cyrillic, etc.).
+- Prevent fallback font issues at runtime.
+
+This is especially useful in mobile games and UI-heavy apps where performance and memory are crucial.
 ---
 
 ## 📁 License
